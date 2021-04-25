@@ -56,7 +56,22 @@ public class Main {
         BinaryTrees.println(bst2);
     }
 
+    static void test3(){
+        Integer data[] = new Integer[] {
+                7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+        };
+
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        for(int i = 0; i < data.length; i ++) {
+            bst.add(data[i]);
+        }
+
+        BinaryTrees.println(bst);
+
+        bst.levelOrderTraversal();
+    }
+
     public static void main(String[] args) {
-        test1();
+        test3();
     }
 }
