@@ -52,6 +52,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
             } else if(cmp < 0) {
                 node = node.left;
             } else { // 相等
+                node.element = element; // 覆盖节点之前的元素
                 return;
             }
         }
