@@ -76,62 +76,52 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         return false;
     }
 
-    /**
-     * 前序遍历
-     * */
-    public void preorderTraversal(){
-        preorderTraversal(root);
+
+    public void preorder(Visitor<E> visitor) {
+        preorder(root, visitor);
     }
 
-    public void preorderTraversal(Node<E> node){
-        if (node == null) return;
-        System.out.println(node.element);
-        preorderTraversal(node.left);
-        preorderTraversal(node.right);
+    private void preorder(Node<E> node, Visitor<E> visitor) {
+        if (root == null || visitor == null) return;
+
+        visitor.visit(node.element);
+        preorder(node.left, visitor);
+        preorder(node.right, visitor);
     }
 
-    /**
-     * 中序遍历
-     * */
-    public void inorderTraversal(){
-        inorderTraversal(root);
+    public void inorder(Visitor<E> visitor) {
+        inorder(root, visitor);
     }
 
-    public void inorderTraversal(Node<E> node){
-        if (node == null) return;
+    private void inorder(Node<E> node, Visitor<E> visitor) {
+        if (node == null || visitor == null) return;
 
-        inorderTraversal(node.left);
-        System.out.println(node.element);
-        inorderTraversal(node.right);
+        inorder(node.left, visitor);
+        visitor.visit(node.element);
+        inorder(node.right, visitor);
     }
 
-    /**
-     * 后序遍历
-     * */
-    public void postorderTraversal(){
-        postorderTraversal(root);
+    public void postorder(Visitor<E> visitor) {
+        postorder(root, visitor);
     }
 
-    public void postorderTraversal(Node<E> node){
-        if (node == null) return;
+    private void postorder(Node<E> node, Visitor<E> visitor) {
+        if (node == null || visitor == null) return;
 
-        postorderTraversal(node.left);
-        postorderTraversal(node.right);
-        System.out.println(node.element);
+        postorder(node.left, visitor);
+        postorder(node.right, visitor);
+        visitor.visit(node.element);
     }
 
 
-    /**
-     * 层序遍历（能手写程度）
-     * */
-    public void levelOrderTraversal(){
-        if (root == null) return;
+    public void levelOrder(Visitor<E> visitor) {
+        if (root == null || visitor == null) return;
         Queue<Node<E>> queue = new LinkedList<>();
         queue.offer(root);
 
         while (!queue.isEmpty()) {
             Node<E> node = queue.poll();
-            System.out.println(node.element);
+            visitor.visit(node.element);
 
             if (node.left != null) {
                 queue.offer(node.left);
@@ -142,6 +132,74 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
             }
         }
     }
+
+
+//    /**
+//     * 前序遍历
+//     * */
+//    public void preorderTraversal(){
+//        preorderTraversal(root);
+//    }
+//
+//    public void preorderTraversal(Node<E> node){
+//        if (node == null) return;
+//        System.out.println(node.element);
+//        preorderTraversal(node.left);
+//        preorderTraversal(node.right);
+//    }
+//
+//    /**
+//     * 中序遍历
+//     * */
+//    public void inorderTraversal(){
+//        inorderTraversal(root);
+//    }
+//
+//    public void inorderTraversal(Node<E> node){
+//        if (node == null) return;
+//
+//        inorderTraversal(node.left);
+//        System.out.println(node.element);
+//        inorderTraversal(node.right);
+//    }
+//
+//    /**
+//     * 后序遍历
+//     * */
+//    public void postorderTraversal(){
+//        postorderTraversal(root);
+//    }
+//
+//    public void postorderTraversal(Node<E> node){
+//        if (node == null) return;
+//
+//        postorderTraversal(node.left);
+//        postorderTraversal(node.right);
+//        System.out.println(node.element);
+//    }
+//
+//
+//    /**
+//     * 层序遍历（能手写程度）
+//     * */
+//    public void levelOrderTraversal(){
+//        if (root == null) return;
+//        Queue<Node<E>> queue = new LinkedList<>();
+//        queue.offer(root);
+//
+//        while (!queue.isEmpty()) {
+//            Node<E> node = queue.poll();
+//            System.out.println(node.element);
+//
+//            if (node.left != null) {
+//                queue.offer(node.left);
+//            }
+//
+//            if (node.right != null) {
+//                queue.offer(node.right);
+//            }
+//        }
+//    }
 
 
 
@@ -176,6 +234,10 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
     }
 
+    public static interface Visitor<E> {
+        void visit(E element);
+    }
+
     // 用于打印
     @Override
     public Object root() {
@@ -201,5 +263,63 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
 
         return ((Node<E>)node).element + "_p(" + parentString + ")";
+    }
+
+    // 层序遍历获取高度
+    public int height1() {
+        if (root == null) return 0;
+
+        // 树的高度
+        int height = 0;
+        // 存储着每一层的元素数量
+        int levelSize = 1;
+
+        Queue<Node<E>> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            Node<E> node = queue.poll();
+            // ...
+            levelSize --;
+
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+
+            if (levelSize == 0) { // 意味着即将访问下一层
+                levelSize = queue.size();
+                height ++;
+            }
+        }
+        return height;
+    }
+
+    // 递归获取高度
+    public int height2() {
+        return height(root);
+    }
+
+    private int height(Node<E> node) {
+        if (node == null) return 0;
+        return 1 + Math.max(height(node.left), height(node.right));
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        toString(root, sb, "");
+        return sb.toString();
+    }
+
+    private void toString(Node<E> node, StringBuilder sb, String prefix) {
+        if (node == null) return;
+
+        toString(node.left, sb, prefix + "L---");
+        sb.append(prefix).append(node.element).append("\n");
+        toString(node.right, sb, prefix + "R---");
     }
 }

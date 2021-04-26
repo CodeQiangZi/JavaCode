@@ -66,9 +66,35 @@ public class Main {
             bst.add(data[i]);
         }
 
-        BinaryTrees.println(bst);
+//        BinaryTrees.println(bst);
+//
+//        bst.levelOrderTraversal();
 
-        bst.levelOrderTraversal();
+
+
+//        bst.levelOrder(new BinarySearchTree.Visitor<Integer>() {
+//            @Override
+//            public void visit(Integer element) {
+//                System.out.println("_" + element + "_");
+//            }
+//        });
+
+//        bst.inorder(new BinarySearchTree.Visitor<Integer>() {
+//            @Override
+//            public void visit(Integer element) {
+//                System.out.println("_" + element + "_");
+//            }
+//        });
+
+//        bst.postorder(new BinarySearchTree.Visitor<Integer>() {
+//            @Override
+//            public void visit(Integer element) {
+//                System.out.println("_" + element + "_");
+//            }
+//        });
+
+        BinaryTrees.println(bst);
+        System.out.println(bst.height1());
     }
 
     public static void main(String[] args) {
