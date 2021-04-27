@@ -57,14 +57,14 @@ public class Main {
     }
 
     static void test3(){
-        Integer data[] = new Integer[] {
-                7, 4, 9, 2, 5, 8, 11, 3, 12, 1
-        };
-
-        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
-        for(int i = 0; i < data.length; i ++) {
-            bst.add(data[i]);
-        }
+//        Integer data[] = new Integer[] {
+//                7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+//        };
+//
+//        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+//        for(int i = 0; i < data.length; i ++) {
+//            bst.add(data[i]);
+//        }
 
 //        BinaryTrees.println(bst);
 //
@@ -93,8 +93,28 @@ public class Main {
 //            }
 //        });
 
+//        BinaryTrees.println(bst);
+//        System.out.println(bst.height1());
+
+
+//        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+//        for(int i = 0; i < 10; i ++) {
+//            bst.add((int)(Math.random() * 100));
+//        }
+//        BinaryTrees.println(bst);
+//        System.out.println(bst.isComplete());
+
+
+        Integer data[] = new Integer[] {
+                7, 4, 9, 2, 5
+        };
+
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        for(int i = 0; i < data.length; i ++) {
+            bst.add(data[i]);
+        }
         BinaryTrees.println(bst);
-        System.out.println(bst.height1());
+        System.out.println(bst.isComplete());
     }
 
     public static void main(String[] args) {
