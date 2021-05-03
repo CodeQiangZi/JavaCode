@@ -27,6 +27,8 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     public void clear(){
+        root = null;
+        size = 0;
     }
 
     public void add(E element){
@@ -74,7 +76,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     public boolean contains(E element){
-        return false;
+        return node(element) != null;
     }
 
     private void remove(Node<E> node) {
