@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="" />
+    <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinarySearchTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinarySearchTree$Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/Person.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +39,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +61,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="二叉树.Main" />
+      <module name="JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="二叉树.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,11 +106,39 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="411" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620001584831">
       <screen x="0" y="23" width="1440" height="801" />
     </state>
     <state x="411" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801@0.23.1440.801" timestamp="1620001584831" />
+    <state width="556" height="31" key="GridCell.Tab.0.bottom" timestamp="1620007698557">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="556" height="301" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1620006489302" />
+    <state width="556" height="31" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1620007698557" />
+    <state width="556" height="31" key="GridCell.Tab.0.center" timestamp="1620007698556">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="556" height="301" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
+    <state width="556" height="31" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1620007698556" />
+    <state width="556" height="31" key="GridCell.Tab.0.left" timestamp="1620007698556">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="556" height="301" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
+    <state width="556" height="31" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1620007698556" />
+    <state width="556" height="31" key="GridCell.Tab.0.right" timestamp="1620007698557">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="556" height="301" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
+    <state width="556" height="31" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1620007698557" />
+    <state x="197" y="23" key="SettingsEditor" timestamp="1620006473236">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="197" y="23" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1620006473236" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1620005740141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
