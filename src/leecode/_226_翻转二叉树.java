@@ -2,8 +2,6 @@ package leecode;
 
 // https://leetcode-cn.com/problems/invert-binary-tree/
 
-import 二叉树.BinarySearchTree;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

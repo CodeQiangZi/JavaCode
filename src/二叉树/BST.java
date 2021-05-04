@@ -2,14 +2,14 @@ package 二叉树;
 import java.util.Comparator;
 import java.util.IllegalFormatFlagsException;
 
-public class BinarySearchTree<E> extends BinaryTree {
+public class BST<E> extends BinaryTree {
     private Comparator<E> comparator;
 
-    public BinarySearchTree() {
+    public BST() {
         this(null);
     }
 
-    public BinarySearchTree(Comparator<E> comparator) {
+    public BST(Comparator<E> comparator) {
         this.comparator = comparator;
     }
 
@@ -18,8 +18,11 @@ public class BinarySearchTree<E> extends BinaryTree {
 
         // 添加第一个节点
         if (root == null) {
-            root = new Node<>(element, null);
+            root = createNode(element, null);
             size ++;
+
+            // 新添加节点之后的处理
+            afterAdd(root);
             return;
         }
 
@@ -44,13 +47,25 @@ public class BinarySearchTree<E> extends BinaryTree {
         }
 
         // 看看插入到父节点的哪个位置
-        Node<E> newNode = new Node<>(element, parent);
+        Node<E> newNode = createNode(element, parent);
+
         if (cmp > 0) {
             parent.right = newNode;
         } else {
             parent.left = newNode;
         }
         size++;
+
+        // 新添加节点之后的处理
+        afterAdd(newNode);
+    }
+
+    /**
+     * 添加node之后的调整
+     * @param node 新添加的节点
+     */
+    protected void afterAdd(Node<E> node) {
+
     }
 
     public void remove(E element){

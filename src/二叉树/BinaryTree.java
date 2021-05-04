@@ -188,6 +188,10 @@ public class BinaryTree<E> implements BinaryTreeInfo {
         return 1 + Math.max(height(node.left), height(node.right));
     }
 
+    protected Node<E> createNode(E element, Node<E> parent){
+        return new Node<>(element, parent);
+    }
+
     public static interface Visitor<E> {
         void visit(E element);
     }
@@ -197,7 +201,6 @@ public class BinaryTree<E> implements BinaryTreeInfo {
         Node<E> left;
         Node<E> right;
         Node<E> parent;
-
         public Node(E element, Node<E> parent){
             this.element = element;
             this.parent = parent;
@@ -209,6 +212,14 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 
         public boolean hasTwoChildren() {
             return left != null && right != null;
+        }
+
+        public boolean isLeftChild(){
+            return parent != null && this == parent.left;
+        }
+
+        public boolean isRightChild(){
+            return parent != null && this == parent.right;
         }
     }
 
