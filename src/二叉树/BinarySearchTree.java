@@ -89,7 +89,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
             Node<E> s = successor(node);
             // 用后继节点的值覆盖度为2的节点的值
             node.element = s.element;
-            // 删除后继节点
+            // 删除后继节点(直接把s赋值给node，if外边直接删除就行了，而且度为1和0走不到里面，也是直接删除node)
             node = s;
         }
 
