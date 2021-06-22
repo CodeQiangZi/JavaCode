@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/AVLTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/leecode/_226_翻转二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/leecode/_226_翻转二叉树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinarySearchTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode/_226_翻转二叉树.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode/_226_翻转二叉树.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +50,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -78,6 +71,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -92,8 +96,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619790479924</updated>
+      <workItem from="1624360273132" duration="319000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
