@@ -214,11 +214,11 @@ public class BinaryTree<E> implements BinaryTreeInfo {
             return left != null && right != null;
         }
 
-        public boolean isLeftChild(){
+        public boolean isLeftChild(){ // 自己是父节点的左节点
             return parent != null && this == parent.left;
         }
 
-        public boolean isRightChild(){
+        public boolean isRightChild(){// 自己是父节点的右节点
             return parent != null && this == parent.right;
         }
     }

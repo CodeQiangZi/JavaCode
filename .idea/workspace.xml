@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,17 +77,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -96,7 +91,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619790479924</updated>
-      <workItem from="1624360273132" duration="319000" />
+      <workItem from="1624360273132" duration="985000" />
+      <workItem from="1624362674404" duration="556000" />
+      <workItem from="1624415023298" duration="624000" />
+      <workItem from="1624432460193" duration="943000" />
+      <workItem from="1624434454813" duration="1606000" />
+      <workItem from="1624448003799" duration="565000" />
+      <workItem from="1624532938427" duration="1806000" />
+      <workItem from="1624534802530" duration="427000" />
     </task>
     <servers />
   </component>

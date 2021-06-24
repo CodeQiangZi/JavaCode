@@ -30,7 +30,7 @@ public class AVLTree<E> extends BST<E> {
      * 恢复平衡
      * @param grand 高度最低的不平衡节点
      */
-    private void rebalance(Node<E> grand) {
+    private void rebalance(Node<E> grand) { // 结合资料中的图看：g\p\n节点
         Node<E> parent = ((AVLNode<E>)grand).tallerChild();
         Node<E> node = ((AVLNode<E>)parent).tallerChild();
         if (parent.isLeftChild()) { // L
@@ -86,7 +86,7 @@ public class AVLTree<E> extends BST<E> {
             super(element, parent);
         }
 
-        public int balanceFactor(){
+        public int balanceFactor(){ // 平衡因子：左子树-右子树
             int leftHeight = left == null ? 0 : ((AVLNode<E>)left).height;
             int rightHeight = right == null ? 0 : ((AVLNode<E>)right).height;
             return leftHeight - rightHeight;
