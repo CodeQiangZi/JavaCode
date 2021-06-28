@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree$AVLNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree$AVLNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/二叉树/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,9 @@
       <workItem from="1624434454813" duration="1606000" />
       <workItem from="1624448003799" duration="565000" />
       <workItem from="1624532938427" duration="1806000" />
-      <workItem from="1624534802530" duration="427000" />
+      <workItem from="1624534802530" duration="1231000" />
+      <workItem from="1624878168055" duration="1769000" />
+      <workItem from="1624879978455" duration="795000" />
     </task>
     <servers />
   </component>
@@ -116,40 +121,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="411" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620001584831">
-      <screen x="0" y="23" width="1440" height="801" />
-    </state>
-    <state x="411" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801@0.23.1440.801" timestamp="1620001584831" />
-    <state width="1358" height="92" key="GridCell.Tab.0.bottom" timestamp="1620116632523">
-      <screen x="0" y="23" width="1440" height="798" />
-    </state>
-    <state width="1358" height="92" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1620116632523" />
-    <state width="556" height="301" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1620006489302" />
-    <state width="556" height="31" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1620007698557" />
-    <state width="1358" height="92" key="GridCell.Tab.0.center" timestamp="1620116632522">
-      <screen x="0" y="23" width="1440" height="798" />
-    </state>
-    <state width="1358" height="92" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1620116632522" />
-    <state width="556" height="301" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
-    <state width="556" height="31" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1620007698556" />
-    <state width="1358" height="92" key="GridCell.Tab.0.left" timestamp="1620116632521">
-      <screen x="0" y="23" width="1440" height="798" />
-    </state>
-    <state width="1358" height="92" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1620116632521" />
-    <state width="556" height="301" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
-    <state width="556" height="31" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1620007698556" />
-    <state width="1358" height="92" key="GridCell.Tab.0.right" timestamp="1620116632522">
-      <screen x="0" y="23" width="1440" height="798" />
-    </state>
-    <state width="1358" height="92" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1620116632522" />
-    <state width="556" height="301" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1620006489301" />
-    <state width="556" height="31" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1620007698557" />
-    <state x="197" y="23" key="SettingsEditor" timestamp="1620006473236">
-      <screen x="0" y="23" width="1440" height="801" />
-    </state>
-    <state x="197" y="23" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1620006473236" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1620005740141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
