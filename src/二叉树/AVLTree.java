@@ -139,5 +139,14 @@ public class AVLTree<E> extends BST<E> {
             if (leftHeight < rightHeight) return right;
             return isLeftChild() ? left : right;
         }
+
+        @Override
+        public String toString() {
+            String parentString = "null";
+            if(parent != null) {
+                parentString = parent.element.toString();
+            }
+            return element + "_p(" + parentString + ")_h(" + height + ")";
+        }
     }
 }
