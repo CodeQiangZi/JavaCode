@@ -10,6 +10,7 @@ public class Main {
         AVLTree<Integer> bst = new AVLTree<>();
         for(int i = 0; i < data.length; i ++) {
             bst.add(data[i]);
+//            BinaryTrees.println(bst);
         }
         BinaryTrees.println(bst);
     }

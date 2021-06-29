@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree$AVLNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/AVLTree$AVLNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCode/二叉树/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/二叉树/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,8 @@
       <workItem from="1624532938427" duration="1806000" />
       <workItem from="1624534802530" duration="1231000" />
       <workItem from="1624878168055" duration="1769000" />
-      <workItem from="1624879978455" duration="1110000" />
+      <workItem from="1624879978455" duration="1714000" />
+      <workItem from="1624964850365" duration="1204000" />
     </task>
     <servers />
   </component>

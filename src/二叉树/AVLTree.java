@@ -30,24 +30,89 @@ public class AVLTree<E> extends BST<E> {
      * 恢复平衡
      * @param grand 高度最低的不平衡节点
      */
+//    private void rebalance2(Node<E> grand) { // 结合资料中的图看：g\p\n节点
+//        Node<E> parent = ((AVLNode<E>)grand).tallerChild();
+//        Node<E> node = ((AVLNode<E>)parent).tallerChild();
+//        if (parent.isLeftChild()) { // L
+//            if (node.isLeftChild()) { //LL
+//                rotateRight(grand);
+//            } else { // LR
+//                rotateLeft(parent);
+//                rotateRight(grand);
+//            }
+//        } else { // R
+//            if (node.isLeftChild()) { //RL
+//                rotateRight(parent);
+//                rotateLeft(grand);
+//            } else { // RR
+//                rotateLeft(grand);
+//            }
+//        }
+//    }
+
+    // 统一所有旋转操作
     private void rebalance(Node<E> grand) { // 结合资料中的图看：g\p\n节点
         Node<E> parent = ((AVLNode<E>)grand).tallerChild();
         Node<E> node = ((AVLNode<E>)parent).tallerChild();
         if (parent.isLeftChild()) { // L
             if (node.isLeftChild()) { //LL
-                rotateRight(grand);
+                rotare(grand, node.left, node, node.right, parent, parent.right, grand, grand.right);
             } else { // LR
-                rotateLeft(parent);
-                rotateRight(grand);
+                rotare(grand, parent.left, parent, node.left, node, node.right, grand, grand.right);
             }
         } else { // R
             if (node.isLeftChild()) { //RL
-                rotateRight(parent);
-                rotateLeft(grand);
+                rotare(grand, grand.left, grand, node.left, node, node.right, parent, parent.right);
             } else { // RR
-                rotateLeft(grand);
+                rotare(grand, grand.left, grand, parent.left, parent, node.left, node, node.right);
             }
         }
+    }
+
+    //
+    private void rotare(
+            Node<E> r, // 子树根节点
+            Node<E> a, Node<E> b, Node<E> c,
+            Node<E> d,
+            Node<E> e, Node<E> f, Node<E> g) {
+        // 让d成为这棵子树的根节点
+        d.parent = r.parent;
+        if (r.isLeftChild()) {
+            r.parent.left = d;
+        } else if (r.isRightChild()) {
+            r.parent.right = d;
+        } else {
+            root = d;
+        }
+
+        // a-b-c
+        b.left = a;
+        if (a != null) {
+            a.parent = b;
+        }
+        b.right = c;
+        if (c != null) {
+            c.parent = b;
+        }
+        updateHeight(b);
+
+        // e-f-g
+        f.left = e;
+        if (e != null) {
+            e.parent = f;
+        }
+        f.right = g;
+        if (g != null) {
+            g.parent = f;
+        }
+        updateHeight(f);
+
+        // b-d-f
+        d.left = b;
+        d.right = f;
+        b.parent = d;
+        f.parent = d;
+        updateHeight(d);
     }
 
     /**
