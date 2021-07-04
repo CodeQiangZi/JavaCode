@@ -111,7 +111,7 @@ public class BST<E> extends BinaryTree {
                 node.parent.right = replacement;
             }
 
-            // 删除节点之后的处理
+            // 删除节点之后的处理(不放到后面-原因：红黑树需要特殊处理)
             afterRemove(node);
         } else if(node.parent == null) { // node是叶子节点，并且是根节点
             root = null;
