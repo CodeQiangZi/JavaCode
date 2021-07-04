@@ -69,15 +69,15 @@ public class AVLTree<E> extends BST<E> {
         Node<E> node = ((AVLNode<E>)parent).tallerChild();
         if (parent.isLeftChild()) { // L
             if (node.isLeftChild()) { //LL
-                rotare(grand, node.left, node, node.right, parent, parent.right, grand, grand.right);
+                rotare(grand, node, node.right, parent, parent.right, grand);
             } else { // LR
-                rotare(grand, parent.left, parent, node.left, node, node.right, grand, grand.right);
+                rotare(grand, parent, node.left, node, node.right, grand);
             }
         } else { // R
             if (node.isLeftChild()) { //RL
-                rotare(grand, grand.left, grand, node.left, node, node.right, parent, parent.right);
+                rotare(grand, grand, node.left, node, node.right, parent);
             } else { // RR
-                rotare(grand, grand.left, grand, parent.left, parent, node.left, node, node.right);
+                rotare(grand, grand, parent.left, parent, node.left, node);
             }
         }
     }
@@ -85,9 +85,9 @@ public class AVLTree<E> extends BST<E> {
     //
     private void rotare(
             Node<E> r, // 子树根节点
-            Node<E> a, Node<E> b, Node<E> c,
+            Node<E> b, Node<E> c,
             Node<E> d,
-            Node<E> e, Node<E> f, Node<E> g) {
+            Node<E> e, Node<E> f) {
         // 让d成为这棵子树的根节点
         d.parent = r.parent;
         if (r.isLeftChild()) {
@@ -98,25 +98,17 @@ public class AVLTree<E> extends BST<E> {
             root = d;
         }
 
-        // a-b-c
-        b.left = a;
-        if (a != null) {
-            a.parent = b;
-        }
+        // b-c
         b.right = c;
         if (c != null) {
             c.parent = b;
         }
         updateHeight(b);
 
-        // e-f-g
+        // e-f
         f.left = e;
         if (e != null) {
             e.parent = f;
-        }
-        f.right = g;
-        if (g != null) {
-            g.parent = f;
         }
         updateHeight(f);
 
