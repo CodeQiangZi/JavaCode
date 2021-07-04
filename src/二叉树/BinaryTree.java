@@ -221,6 +221,16 @@ public class BinaryTree<E> implements BinaryTreeInfo {
         public boolean isRightChild(){// 自己是父节点的右节点
             return parent != null && this == parent.right;
         }
+
+        public Node<E> sibling(){ // 兄弟节点
+            if (isLeftChild()) {
+                return parent.right;
+            }
+            if (isRightChild()) {
+                return parent.left;
+            }
+            return null;
+        }
     }
 
     // 用于打印

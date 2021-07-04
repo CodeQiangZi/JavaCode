@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7272cc-4794-48a6-b12a-ccc61fa22c09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/二叉树/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树/RBTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +120,24 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1358" height="89" key="GridCell.Tab.0.bottom" timestamp="1625395044367">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1358" height="89" key="GridCell.Tab.0.bottom/0.25.1440.790@0.25.1440.790" timestamp="1625395044367" />
+    <state width="1358" height="89" key="GridCell.Tab.0.center" timestamp="1625395044366">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1358" height="89" key="GridCell.Tab.0.center/0.25.1440.790@0.25.1440.790" timestamp="1625395044366" />
+    <state width="1358" height="89" key="GridCell.Tab.0.left" timestamp="1625395044365">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1358" height="89" key="GridCell.Tab.0.left/0.25.1440.790@0.25.1440.790" timestamp="1625395044365" />
+    <state width="1358" height="89" key="GridCell.Tab.0.right" timestamp="1625395044367">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1358" height="89" key="GridCell.Tab.0.right/0.25.1440.790@0.25.1440.790" timestamp="1625395044367" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1620005740141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
