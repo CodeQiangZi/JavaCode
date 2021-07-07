@@ -93,8 +93,17 @@ public class RBTree<E> extends BBST<E> {
     }
 
     @Override
-    protected void afterRemove(Node<E> node) {
-        super.afterRemove(node);
+    protected void afterRemove(Node<E> node, Node<E> replacement) {
+        // 1、如果删除的节点是红色
+        if (isRed(node)) return;
+
+        // 2、用以取代node的子节点是红色
+        if (isRed(replacement)) {
+            black(replacement);
+            return;
+        }
+
+        // 3、删除的是黑色叶子节点
     }
 
     private static class RBNode<E> extends Node<E> {
